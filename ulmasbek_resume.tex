@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Ulmasbek Rakhmatullaev
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\bluebox}[1]{\fcolorbox{blue}{white}{#1}}
+
+\definecolor{linkcolor}{RGB}{0,0,255}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+% 	\textbf{\href{http://ulmasbek.github.io/}{\Large Ulmasbek Rakhmatullaev}} & Email: \href{mailto:rakhmatullaevulmas@gmail.com}{rakhmatullaevulmas@gmail.com}\\
+%   \href{http://ulmasbek.github.io/}{Portfolio}, \href{https://linkedin.com/in/ulmasbek}{LinkedIn}, \href{https://t.me/abdullah_rkhm}{Telegram} & Mobile: \href{tel:+998917940244}{+998 91 794 02 44} \\
+% \end{tabular*}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\bluebox{\href{http://ulmasbek.github.io/}{\Large Ulmasbek Rakhmatullaev}}} & Email: \bluebox{\href{mailto:rakhmatullaevulmas@gmail.com}{rakhmatullaevulmas@gmail.com}} \\
+	\bluebox{\href{http://ulmasbek.github.io/}{Portfolio}}, \bluebox{\href{https://linkedin.com/in/ulmasbek}{LinkedIn}}, \bluebox{\href{https://t.me/abdullah_rkhm}{Telegram}} & Mobile: \bluebox{\href{tel:+998917940244}{+998 91 794 02 44}} \\
+\end{tabular*}
+
+
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Skills \hfill Languages}
+ \resumeSubHeadingListStart
+   \item{
+     {Dart, Swift, Java \hfill English, Russian, Uzbek}
+     \vspace{-10pt}
+   }
+   \item{
+    {Flutter, UIKit, Android}
+     \vspace{-10pt}
+   }
+   \item{
+     {CI/CD, Fastlane, Git, Bloc, Riverpod, GetX, Dio, Chopper}
+     \vspace{-10pt}
+   }
+   \item{
+     {Scrum, Kanban, Jira, Confluence, Clean Code, SOLID}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Eriell}{Tashkent, Uzbekistan}
+      {Flutter Software Engineer}{May 2023 - Present}
+      \resumeItemListStart
+	  \item{Orchestrated the development of architecture for the Flutter projects, this pivotal initiative substantially enhanced collaboration and comprehension among Flutter developers and newcomers, fostering seamless communication and ensuring a standardized approach across all future projects.}
+	  \item{Implemented streamlined CI/CD pipelines with Fastlane and GitLab, automating app building and uploads to App Store and Google Play Store. Boosted team efficiency, cutting manual tasks and accelerating app deployment for increased productivity.}
+	  \item{Enhanced caching strategies and optimized API calls for legacy projects, resulting in a 40\% reduction in unnecessary API requests throughout the app's lifespan.}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Vention}{Wroclaw, Poland}
+      {Middle Software Engineer}{Jan 2022 - Apr 2023}
+      \resumeItemListStart
+	  \item{Implemented cross platform and Native applications using {\em Flutter} and \em UIKit/Swift}
+          \item{Actively participated in daily meetings, sprint plannings, retrospectives and task evaluations.}
+          \item{Conducted code reviews for the team's engineers, averaging 2 PR's reviewed daily to ensure code quality and adherence to best practices.}
+          \item{Authored comprehensive documentation utilizing Confluence, providing a structured and accessible resource for project insights and guidelines.}
+          \item{Introduced UX improvements that significantly enhanced the app's usability, earning positive feedback from the client}
+          \item{Assisted team members in developing Native IOS application using \em UIKit/Swift}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {UIC Group}{Tashkent, Uzbekistan}
+      {Lead Flutter Developer}{May 2020 - Dec 2021}
+      \resumeItemListStart
+	  \item{Led and supervised a team of five Flutter developers, guiding their efforts towards successful project completion and collective growth.}
+	  \item{Crafted versatile UI components adopted across multiple applications within the company, contributing to a unified and consistent user interface experience.}
+	  \item{Made Performance optimizations by minimizing UI redraws and other expensive operations}
+	  \item{Integrated {\em Java/Kotlin} into Point of Sale (POS) Flutter application, using Platform channels.}
+	  \item{Collaborated closely with cross-functional teams including bakckend and frontend developers, design team and project owners and managers.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Georgia Institute of Technology}{Atlanta, GA}
+    %   {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+    %   \resumeItemListStart
+    %     \resumeItem{Research Assistant - Machine Learning}
+    %       {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+    %     \resumeItem{Teaching Assistant - Computational Investing}
+    %       {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+    %   \resumeItemListEnd
+    %
+  \resumeSubHeadingListEnd
+
+
+% %-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Inha University}{Tashkent, Uzbekistan}
+      {Bachelor of Science in Computer Science;  GPA: 3.60 (8.0/10.0)}{Aug. 2016 -- May. 2020}
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
