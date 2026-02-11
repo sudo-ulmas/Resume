@@ -13,7 +13,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}%[hidelinks]
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -49,9 +49,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -85,7 +85,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\bluebox}[1]{\fcolorbox{blue}{white}{#1}}
+\newcommand{\bluebox}[1]{\fcolorbox{white}{white}{#1}}
 
 \definecolor{linkcolor}{RGB}{0,0,255}
 
@@ -96,110 +96,109 @@
 \begin{document}
 
 %----------HEADING-----------------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-% 	\textbf{\href{http://ulmasbek.github.io/}{\Large Ulmasbek Rakhmatullaev}} & Email: \href{mailto:rakhmatullaevulmas@gmail.com}{rakhmatullaevulmas@gmail.com}\\
-%   \href{http://ulmasbek.github.io/}{Portfolio}, \href{https://linkedin.com/in/ulmasbek}{LinkedIn}, \href{https://t.me/abdullah_rkhm}{Telegram} & Mobile: \href{tel:+998917940244}{+998 91 794 02 44} \\
-% \end{tabular*}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\bluebox{\href{http://ulmasbek.github.io/}{\Large Ulmasbek Rakhmatullaev}}} & Email: \bluebox{\href{mailto:rakhmatullaevulmas@gmail.com}{rakhmatullaevulmas@gmail.com}} \\
-	\bluebox{\href{http://ulmasbek.github.io/}{Portfolio}}, \bluebox{\href{https://linkedin.com/in/ulmasbek}{LinkedIn}}, \bluebox{\href{https://t.me/abdullah_rkhm}{Telegram}} & Mobile: \bluebox{\href{tel:+998917940244}{+998 91 794 02 44}} \\
+    \textbf{{\Large Ulmasbek Rakhmatullaev}} & Email: \bluebox{\href{mailto:rakhmatullaevulmas@gmail.com}{rakhmatullaevulmas@gmail.com}} \\ 
+    \textbf{Senior Flutter Developer} & Mobile: \bluebox{\href{tel:+998917940244}{+998 91 794 02 44}} \\
+    Linkedin: \bluebox{\href{https://linkedin.com/in/ulmasbek}{linkedin.com/in/ulmasbek}} Github: \bluebox{\href{https://github.com/sudo-ulmas}{github.com/sudo-ulmas}} & Telegram: \bluebox{\href{https://t.me/abdullah_rkhm}{abdullah\_rkhm}}
 \end{tabular*}
 
+\vspace{-10pt}
 
+%----------SUMMARY-----------------
+\section{Professional Summary}
+\small{Senior Flutter Developer with 5+ years of experience architecting cross-platform mobile solutions and leading development teams. Specialized in building SDKs, implementing platform-level integrations, and optimizing app performance. Proven track record in fintech, e-commerce, and enterprise applications. Strong foundation in mobile architecture, CI/CD automation, and mentoring engineering teams. Expanding expertise into backend development with Python/Django.}
 
+\vspace{-5pt}
 
 % --------PROGRAMMING SKILLS------------
-\section{Skills \hfill Languages}
+\section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     {Dart, Swift, Java \hfill English, Russian, Uzbek}
-     \vspace{-10pt}
+     \textbf{Mobile Development:} Flutter, Dart, Swift, UIKit, Android, Platform Channels, Flutter Modules (Add-to-App)
+     \vspace{-8pt}
    }
    \item{
-    {Flutter, UIKit, Android}
-     \vspace{-10pt}
+     \textbf{State Management \& Architecture:} Bloc/Cubit, Provider, GetX, Clean Architecture, SOLID Principles
+     \vspace{-8pt}
    }
    \item{
-     {CI/CD, Fastlane, Git, Bloc, Riverpod, GetX, Dio, Chopper}
-     \vspace{-10pt}
+     \textbf{Testing \& Quality:} Unit Testing, Widget Testing, TDD, Firebase Test Lab, Crashlytics, Sentry
+     \vspace{-8pt}
    }
    \item{
-     {Scrum, Kanban, Jira, Confluence, Clean Code, SOLID}
+     \textbf{DevOps \& Tools:} CI/CD, Fastlane, GitLab, Git, Performance Optimization, DevTools
+     \vspace{-8pt}
+   }
+   \item{
+     \textbf{Backend \& Integration:} Python, Django (learning), REST APIs, SSO, Passkeys, Biometric Authentication
+     \vspace{-8pt}
+   }
+   \item{
+     \textbf{Methodologies:} Scrum, Kanban, Jira, Confluence, Code Reviews, Team Leadership
+     \vspace{-8pt}
+   }
+   \item{
+     \textbf{Languages:} English (Fluent), Russian (Fluent), Uzbek (Native)
    }
  \resumeSubHeadingListEnd
 
+\vspace{-5pt}
+
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Professional Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Payfintech (Pully Platform)}{Tashkent, Uzbekistan}
+      {Senior Flutter Developer}{January 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Architected and built cross-platform authentication SDK from scratch for the Pully platform, serving 4 major banks (Agrobank, Open Bank, MKB, BRB) with 150K+ monthly active users across mobile and web.}
+        \resumeItem{Sole Flutter engineer responsible for SDK development, delivering native iOS/Android integration via Flutter Add-to-App and web integration via Flutter Web, enabling seamless authentication across all platforms.}
+        \resumeItem{Implemented advanced authentication features including Passkeys integration, MyID biometric verification, and secure token-based authentication flow, reducing user login friction by 40\%.}
+        \resumeItem{Designed SDK architecture to be modular and extensible, enabling rapid integration for new banking partners with minimal configuration.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Eriell}{Tashkent, Uzbekistan}
-      {Flutter Software Engineer}{May 2023 - Present}
+      {Senior Flutter Developer}{May 2023 - January 2024}
       \resumeItemListStart
-	  \item{Orchestrated the development of architecture for the Flutter projects, this pivotal initiative substantially enhanced collaboration and comprehension among Flutter developers and newcomers, fostering seamless communication and ensuring a standardized approach across all future projects.}
-	  \item{Implemented streamlined CI/CD pipelines with Fastlane and GitLab, automating app building and uploads to App Store and Google Play Store. Boosted team efficiency, cutting manual tasks and accelerating app deployment for increased productivity.}
-	  \item{Enhanced caching strategies and optimized API calls for legacy projects, resulting in a 40\% reduction in unnecessary API requests throughout the app's lifespan.}
+        \resumeItem{Built specialized Android-based warehouse management applications for manufacturing facilities, integrating barcode scanners, thermal printers, and custom hardware via Platform Channels.}
+        \resumeItem{Engineered CI/CD pipelines with Fastlane and GitLab, reducing deployment cycle time significantly.}
+        \resumeItem{Significantly reduced app crash rates and ANRs by implementing comprehensive observability stack with Firebase Crashlytics and Sentry, achieving 99.5\% crash-free sessions.}
+        \resumeItem{Maintained and refactored legacy codebases, improving code quality and reducing technical debt.}
       \resumeItemListEnd
       
-
     \resumeSubheading
       {Vention}{Wroclaw, Poland}
-      {Middle Software Engineer}{Jan 2022 - Apr 2023}
+      {Middle Flutter Developer}{January 2022 - April 2023}
       \resumeItemListStart
-	  \item{Implemented cross platform and Native applications using {\em Flutter} and \em UIKit/Swift}
-          \item{Actively participated in daily meetings, sprint plannings, retrospectives and task evaluations.}
-          \item{Conducted code reviews for the team's engineers, averaging 2 PR's reviewed daily to ensure code quality and adherence to best practices.}
-          \item{Authored comprehensive documentation utilizing Confluence, providing a structured and accessible resource for project insights and guidelines.}
-          \item{Introduced UX improvements that significantly enhanced the app's usability, earning positive feedback from the client}
-          \item{Assisted team members in developing Native IOS application using \em UIKit/Swift}
+        \resumeItem{Built internal employee platform with SSO authentication integrated across Vention's prouduct ecosystem.}
+        \resumeItem{Actively participated in agile ceremonies, daily standups, sprint planning, retrospectives, and SP estimations.}
+        \resumeItem{Conducted code reviews, 2 PR's/day, ensuring code quality, adherence to best practices, and knowledge sharing.}
       \resumeItemListEnd
 
     \resumeSubheading
       {UIC Group}{Tashkent, Uzbekistan}
-      {Lead Flutter Developer}{May 2020 - Dec 2021}
+      {Flutter Developer / Team Lead}{May 2020 - January 2022}
       \resumeItemListStart
-	  \item{Led and supervised a team of five Flutter developers, guiding their efforts towards successful project completion and collective growth.}
-	  \item{Crafted versatile UI components adopted across multiple applications within the company, contributing to a unified and consistent user interface experience.}
-	  \item{Made Performance optimizations by minimizing UI redraws and other expensive operations}
-	  \item{Integrated {\em Java/Kotlin} into Point of Sale (POS) Flutter application, using Platform channels.}
-	  \item{Collaborated closely with cross-functional teams including bakckend and frontend developers, design team and project owners and managers.}
+        \resumeItem{Led a team of 8 Flutter developers, successfully delivering 13 production applications across diverse industries including e-commerce, news media, education, school management, insurance, and social networking.}
+        \resumeItem{Mentored and onboarded 5+ junior developers, establishing Flutter best practices, coding standards and building internal knowledge base that became company-wide guidelines.}
+        \resumeItem{Optimized resource allocation and project workflows, increasing team capacity by 40\% and enabling the company to take on larger client engagements.}
+        \resumeItem{Integrated native Java/Kotlin modules into Flutter applications using Platform Channels, enabling access to Android-specific hardware and SDKs.}
+        \resumeItem{Collaborated with cross-functional teams (Design, QA, Backend, DevOps, PM) during all project phases from ideation to production deployment.}
       \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Georgia Institute of Technology}{Atlanta, GA}
-    %   {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-    %   \resumeItemListStart
-    %     \resumeItem{Research Assistant - Machine Learning}
-    %       {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-    %     \resumeItem{Teaching Assistant - Computational Investing}
-    %       {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-    %   \resumeItemListEnd
-    %
   \resumeSubHeadingListEnd
 
-
-% %-----------PROJECTS-----------------
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%     \resumeSubItem{QuantSoftware Toolkit}
-%       {Open source python library for financial data analysis and machine learning for finance.}
-%     \resumeSubItem{Github Visualization}
-%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-%     \resumeSubItem{Recommendation System}
-%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%     \resumeSubItem{Mac Setup}
-%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-%   \resumeSubHeadingListEnd
+\vspace{-5pt}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Inha University}{Tashkent, Uzbekistan}
-      {Bachelor of Science in Computer Science;  GPA: 3.60 (8.0/10.0)}{Aug. 2016 -- May. 2020}
+      {Bachelor of Science in Computer Science;  GPA: 3.60}{August 2016 - May 2020}
   \resumeSubHeadingListEnd
 
-
+\vspace{-10pt}
 
 %-------------------------------------------
 \end{document}
